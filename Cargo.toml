@@ -1,0 +1,18 @@
+[package]
+name = "baddie-csprng"
+version = "0.1.0"
+edition = "2024"
+authors = ["Lany Atwood <lany@colorized.life>"]
+license = "AGPL-3.0-only"
+
+[dependencies]
+blake3 = "1.8.5"
+
+[profile.dev.package."*"]
+opt-level = 1
+debug = false
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
