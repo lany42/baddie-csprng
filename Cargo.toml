@@ -1,12 +1,20 @@
 [package]
 name = "baddie-csprng"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2024"
-authors = ["Lany Atwood <lany@colorized.life>"]
+description = "A keyed CSPRNG backed by the BLAKE3 cryptographic hash function."
 license = "AGPL-3.0-only"
+readme = "README.md"
+repository = "https://git.colorized.life/baddie-csprng"
+keywords = ["no_std", "prng", "random", "blake3", "xof"]
+categories = ["cryptography"]
+exclude = ["/scripts", "/.gitignore"]
+
+[features]
+default = []
 
 [dependencies]
-blake3 = "1.8.5"
+blake3 = { version = "1.8.5", default-features = false }
 
 [profile.dev.package."*"]
 opt-level = 1
