@@ -1,5 +1,7 @@
 # baddie-csprng
 
+The canonical home of this repository is at https://git.colorized.life/baddie-csprng/
+
 A keyed CSPRNG backed by the BLAKE3 cryptographic hash function.
 
 ## Quickstart
