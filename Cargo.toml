@@ -8,7 +8,7 @@ readme = "README.md"
 repository = "https://git.colorized.life/baddie-csprng"
 keywords = ["no_std", "prng", "random", "blake3", "xof"]
 categories = ["cryptography"]
-exclude = ["/scripts", "/.gitignore"]
+exclude = ["/.github", "/scripts", "/.gitignore"]
 
 [features]
 default = []
