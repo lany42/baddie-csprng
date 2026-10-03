@@ -1,6 +1,6 @@
 [package]
 name = "baddie-csprng"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2024"
 description = "A keyed CSPRNG backed by the BLAKE3 cryptographic hash function."
 license = "AGPL-3.0-only"
